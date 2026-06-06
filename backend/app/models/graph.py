@@ -15,3 +15,12 @@ class NeighborhoodResponse(BaseModel):
     node_id: str = Field(..., description="The ID of the queried central node")
     nodes: List[NodeResponse] = Field(..., description="List of unique nodes in the neighborhood")
     edges: List[EdgeResponse] = Field(..., description="List of edges connecting the nodes")
+
+class RelationCount(BaseModel):
+    relation: str = Field(..., description="Type of relationship")
+    count: int = Field(..., description="Number of edges with this relation")
+
+class NodeMetricsResponse(BaseModel):
+    node_id: str = Field(..., description="The ID of the queried node")
+    degree: int = Field(..., description="Total number of connections (edges)")
+    relations_count: List[RelationCount] = Field(..., description="Breakdown of connections by relation type")

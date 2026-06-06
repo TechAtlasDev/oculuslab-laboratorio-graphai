@@ -105,3 +105,35 @@ class OptimusService:
             "nodes": list(unique_nodes.values()),
             "edges": edges
         }
+
+    def get_node_metrics(self, node_id: str) -> dict:
+        """
+        Calculates basic metrics for a specific node, such as its degree and relations breakdown.
+        """
+        import polars as pl
+        
+        logger.info(f"Calculating metrics for node: {node_id}")
+        path_edges = self.get_file_path("edges.parquet")
+        
+        lf_edges = pl.scan_parquet(path_edges)
+        
+        # Filter edges involving the node
+        lf_node_edges = lf_edges.filter(
+            (pl.col("from") == node_id) | (pl.col("to") == node_id)
+        )
+        
+        try:
+            # Aggregate relations count
+            df_metrics = lf_node_edges.group_by("relation").agg(pl.len().alias("count")).collect()
+            
+            degree = df_metrics["count"].sum() if not df_metrics.is_empty() else 0
+            relations_count = df_metrics.to_dicts()
+            
+            return {
+                "node_id": node_id,
+                "degree": degree,
+                "relations_count": relations_count
+            }
+        except Exception as e:
+            logger.error(f"Error executing polars query for metrics: {e}")
+            raise

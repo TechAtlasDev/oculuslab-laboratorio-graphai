@@ -62,3 +62,45 @@ curl -X 'GET' \
   ]
 }
 ```
+
+---
+
+## Metrics Endpoint
+
+**Endpoint:** `GET /api/v1/graph/nodes/{node_id}/metrics`
+
+### Descripción
+Este endpoint recupera métricas topológicas para un nodo específico dentro del grafo de conocimiento biomédico. Las métricas incluyen el grado total del nodo (número de conexiones) y un desglose detallado de la cantidad de aristas por tipo de relación. Al igual que el vecindario, este endpoint utiliza *LazyFrames* de Polars para calcular los resultados en tiempo real con alta eficiencia y bajo consumo de memoria RAM.
+
+### Parámetros de Ruta (Path Parameters)
+| Parámetro | Tipo   | Obligatorio | Descripción | Ejemplo |
+| :--- | :--- | :--- | :--- | :--- |
+| `node_id` | `string` | Sí | El identificador único del nodo central a analizar. | `ENSG00000146648` |
+
+### Estructura de la Respuesta
+La respuesta devuelve un objeto JSON validado mediante el modelo `NodeMetricsResponse` de Pydantic. Contiene el identificador del nodo, su grado (degree) y una lista con la cuenta de ocurrencias por cada tipo de relación.
+
+### Ejemplo de Petición
+```bash
+curl -X 'GET' \
+  'http://localhost:8000/api/v1/graph/nodes/ENSG00000146648/metrics' \
+  -H 'accept: application/json'
+```
+
+### Ejemplo de Respuesta Exitosa (`HTTP 200`)
+```json
+{
+  "node_id": "ENSG00000146648",
+  "degree": 145,
+  "relations_count": [
+    {
+      "relation": "TARGETS",
+      "count": 10
+    },
+    {
+      "relation": "ASSOCIATED_WITH",
+      "count": 135
+    }
+  ]
+}
+```
