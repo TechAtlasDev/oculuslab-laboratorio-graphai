@@ -7,15 +7,17 @@ import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import { MagnifyingGlass, ChartBar, Globe } from '@phosphor-icons/react';
 import { fetchStats } from '@/lib/api';
-import type { MetricsResponse, GraphStats } from '@/lib/api';
+import type { MetricsResponse, GraphStats, GraphNode } from '@/lib/api';
+import { AdvancedDiscoveryDialog } from './AdvancedDiscoveryDialog';
 
 interface SidebarProps {
   onSearch: (nodeId: string, limit: number) => void;
   metrics: MetricsResponse | null;
   loading: boolean;
+  onInjectNodes: (nodes: GraphNode[]) => void;
 }
 
-export function Sidebar({ onSearch, metrics, loading }: SidebarProps) {
+export function Sidebar({ onSearch, metrics, loading, onInjectNodes }: SidebarProps) {
   const [nodeId, setNodeId] = useState('ENSG00000146648');
   const [limit, setLimit] = useState(15);
   const [stats, setStats] = useState<GraphStats | null>(null);
@@ -45,7 +47,7 @@ export function Sidebar({ onSearch, metrics, loading }: SidebarProps) {
           Query the biomedical knowledge graph.
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 mb-4">
           <div className="space-y-2">
             <Label htmlFor="nodeId">Node ID</Label>
             <Input
@@ -73,6 +75,8 @@ export function Sidebar({ onSearch, metrics, loading }: SidebarProps) {
             {loading ? 'Searching...' : 'Explore Node'}
           </Button>
         </form>
+
+        <AdvancedDiscoveryDialog onInjectNodes={onInjectNodes} />
       </div>
 
       <Separator />

@@ -1,10 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
+import { MemoryRouter } from 'react-router-dom';
 import { LandingPage } from './LandingPage';
 
 describe('LandingPage', () => {
   it('renders the Hero section successfully', () => {
-    render(<LandingPage />);
+    render(
+      <MemoryRouter>
+        <LandingPage />
+      </MemoryRouter>
+    );
     
     // Check if the main heading is present
     const heading = screen.getByText(/Visualiza la Complejidad de los/i);

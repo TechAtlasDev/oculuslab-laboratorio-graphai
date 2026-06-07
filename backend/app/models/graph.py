@@ -32,6 +32,10 @@ class SearchNodeResponse(BaseModel):
     items: List[NodeResponse] = Field(..., description="List of nodes matching the search criteria")
     total: int = Field(..., description="Total number of matches")
 
+class DiscoveryNodeResponse(BaseModel):
+    items: List[NodeDetailsResponse] = Field(..., description="List of nodes with full details")
+    total: int = Field(..., description="Total number of matches found")
+
 class LabelStat(BaseModel):
     label: str
     count: int

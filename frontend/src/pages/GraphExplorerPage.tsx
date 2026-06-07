@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { Sidebar } from '@/sections/graph-explorer/Sidebar';
 import { GraphCanvas } from '@/sections/graph-explorer/GraphCanvas';
 import { NodeDetailsPanel } from '@/sections/graph-explorer/NodeDetailsPanel';
+import { EdgeDetailsPanel } from '@/sections/graph-explorer/EdgeDetailsPanel';
 import { fetchNeighborhood, fetchMetrics } from '@/lib/api';
-import type { GraphNode, GraphEdge, MetricsResponse } from '@/lib/api';
+import type { GraphNode, GraphEdge, MetricsResponse, RepurposingCandidate } from '@/lib/api';
 
 export function GraphExplorerPage() {
   const [nodes, setNodes] = useState<GraphNode[]>([]);
@@ -12,6 +13,7 @@ export function GraphExplorerPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const [selectedEdge, setSelectedEdge] = useState<GraphEdge | null>(null);
 
   const handleSearch = async (nodeId: string, limit: number) => {
     setLoading(true);
@@ -26,6 +28,7 @@ export function GraphExplorerPage() {
       setEdges(neighborhoodData.edges);
       setMetrics(metricsData);
       setSelectedNodeId(nodeId);
+      setSelectedEdge(null);
     } catch (err) {
       console.error(err);
       setError('Failed to fetch graph data. Make sure the backend is running.');
@@ -81,9 +84,48 @@ export function GraphExplorerPage() {
     }
   };
 
+  const handleInjectRepurposing = (drugId: string, candidate: RepurposingCandidate) => {
+    const newNodes = [candidate.disease, ...candidate.intermediate_nodes];
+    
+    const newEdges: GraphEdge[] = [];
+    candidate.intermediate_nodes.forEach(gene => {
+      newEdges.push({ source: drugId, target: gene.id, relation: 'TARGETS' });
+      newEdges.push({ source: gene.id, target: candidate.disease.id, relation: 'ASSOCIATED_WITH' });
+    });
+
+    setNodes(prev => {
+      const filteredNodes = newNodes.filter(n => !prev.some(pn => pn.id === n.id));
+      return [...prev, ...filteredNodes];
+    });
+
+    setEdges(prev => {
+      const filteredEdges = newEdges.filter(e => !prev.some(pe => 
+        pe.source === e.source && pe.target === e.target && pe.relation === e.relation
+      ));
+      return [...prev, ...filteredEdges];
+    });
+
+    setSelectedNodeId(candidate.disease.id);
+  };
+
+  const handleInjectDiscoveryNodes = (newNodes: GraphNode[]) => {
+    setNodes(prev => {
+      const filteredNodes = newNodes.filter(n => !prev.some(pn => pn.id === n.id));
+      return [...prev, ...filteredNodes];
+    });
+    if (newNodes.length > 0) {
+      setSelectedNodeId(newNodes[0].id);
+    }
+  };
+
   return (
     <main className="flex h-screen w-full overflow-hidden bg-background text-foreground">
-      <Sidebar onSearch={handleSearch} metrics={metrics} loading={loading} />
+      <Sidebar 
+        onSearch={handleSearch} 
+        metrics={metrics} 
+        loading={loading} 
+        onInjectNodes={handleInjectDiscoveryNodes} 
+      />
       
       <div className="flex-1 relative overflow-hidden">
         {error && (
@@ -94,20 +136,37 @@ export function GraphExplorerPage() {
         <GraphCanvas 
           apiNodes={nodes} 
           apiEdges={edges} 
-          onNodeSelect={setSelectedNodeId}
+          onNodeSelect={(id) => {
+            setSelectedNodeId(id);
+            setSelectedEdge(null);
+          }}
+          onEdgeSelect={(edge) => {
+            setSelectedEdge(edge);
+            setSelectedNodeId(null);
+          }}
         />
 
         {/* Right Drawer */}
         <div 
           className={`absolute top-0 right-0 h-full transition-transform duration-300 ease-in-out z-20 ${
-            selectedNodeId ? 'translate-x-0' : 'translate-x-full'
+            (selectedNodeId || selectedEdge) ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <NodeDetailsPanel 
-            nodeId={selectedNodeId} 
-            onClose={() => setSelectedNodeId(null)}
-            onExpandNeighborhood={handleExpandNeighborhood}
-          />
+          {selectedNodeId && (
+            <NodeDetailsPanel 
+              nodeId={selectedNodeId} 
+              onClose={() => setSelectedNodeId(null)}
+              onExpandNeighborhood={handleExpandNeighborhood}
+              onInjectRepurposing={handleInjectRepurposing}
+            />
+          )}
+          {selectedEdge && (
+            <EdgeDetailsPanel
+              edge={selectedEdge}
+              nodes={nodes}
+              onClose={() => setSelectedEdge(null)}
+            />
+          )}
         </div>
       </div>
     </main>
