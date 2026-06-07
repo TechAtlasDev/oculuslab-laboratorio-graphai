@@ -1,0 +1,3500 @@
+{
+    "MFN": {
+        "common_keys": [
+            "definition",
+            "xrefs",
+            "ontology",
+            "sources",
+            "synonyms",
+            "name"
+        ],
+        "samples": [
+            {
+                "id": "GO_0000006",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "high-affinity zinc transmembrane transporter activity",
+                    "definition": "Enables the transfer of zinc ions (Zn2+) from one side of a membrane to the other, probably powered by proton motive force. In high-affinity transport the transporter is able to bind the solute even if it is only present at very low concentrations.",
+                    "xrefs": [
+                        "TC:2.A.5.1.1"
+                    ],
+                    "synonyms": [
+                        "high affinity zinc uptake transmembrane transporter activity",
+                        "high-affinity zinc uptake transmembrane transporter activity"
+                    ],
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            },
+            {
+                "id": "GO_0000007",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "low-affinity zinc ion transmembrane transporter activity",
+                    "definition": "Enables the transfer of a solute or solutes from one side of a membrane to the other according to the reaction: Zn2+ = Zn2+, probably powered by proton motive force. In low-affinity transport the transporter is able to bind the solute only if it is present at very high concentrations.",
+                    "xrefs": [
+                        "GOC:mtg_transport",
+                        "ISBN:0815340729"
+                    ],
+                    "synonyms": null,
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            },
+            {
+                "id": "GO_0000009",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "alpha-1,6-mannosyltransferase activity",
+                    "definition": "Catalysis of the transfer of a mannose residue to an oligosaccharide, forming an alpha-(1->6) linkage.",
+                    "xrefs": [
+                        "GOC:mcc",
+                        "PMID:2644248"
+                    ],
+                    "synonyms": [
+                        "1,6-alpha-mannosyltransferase activity"
+                    ],
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            }
+        ]
+    },
+    "PWY": {
+        "common_keys": [
+            "sources",
+            "species",
+            "name"
+        ],
+        "samples": [
+            {
+                "id": "REACT:R-HSA-1059683",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "REACTOME",
+                            "OPEN_TARGETS"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "Interleukin-6 signaling",
+                    "species": "Homo sapiens"
+                }
+            },
+            {
+                "id": "REACT:R-HSA-109581",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "REACTOME",
+                            "OPEN_TARGETS"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "Apoptosis",
+                    "species": "Homo sapiens"
+                }
+            },
+            {
+                "id": "REACT:R-HSA-109582",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "REACTOME",
+                            "OPEN_TARGETS"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "Hemostasis",
+                    "species": "Homo sapiens"
+                }
+            }
+        ]
+    },
+    "DIS": {
+        "common_keys": [
+            "related_synonyms",
+            "parents",
+            "umls_cui",
+            "narrow_synonyms",
+            "ancestors",
+            "xrefs",
+            "obsolete_terms",
+            "broad_synonyms",
+            "therapeutic_areas",
+            "is_leaf",
+            "description",
+            "name",
+            "exact_synonyms",
+            "snomed_full_names",
+            "concept_ids",
+            "children",
+            "descendants",
+            "sources",
+            "obsolete_xrefs",
+            "cui_semantic_type",
+            "concept_names",
+            "snomed_concept_ids",
+            "code"
+        ],
+        "samples": [
+            {
+                "id": "DOID_0050890",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "DRUG_CENTRAL",
+                            "MONDO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "synucleinopathy",
+                    "description": "A neurodegenerative disease that is characterized by the abnormal accumulation of aggregates of alpha-synuclein protein in neurons, nerve fibres or glial cells. [url:http://en.wikipedia.org/wiki/Synucleinopathies ]",
+                    "code": "http://purl.obolibrary.org/obo/DOID_0050890",
+                    "xrefs": null,
+                    "parents": [
+                        "MONDO_0019052",
+                        "MONDO_0021179",
+                        "MONDO_0024237"
+                    ],
+                    "exact_synonyms": null,
+                    "related_synonyms": [
+                        "alpha synucleinopathies",
+                        "synucleinopathies"
+                    ],
+                    "narrow_synonyms": [],
+                    "broad_synonyms": [],
+                    "obsolete_terms": [],
+                    "obsolete_xrefs": [],
+                    "children": [
+                        "EFO_0006792",
+                        "EFO_1001050"
+                    ],
+                    "ancestors": [
+                        "MONDO_0024237",
+                        "EFO_0005772",
+                        "EFO_0000618",
+                        "MONDO_0019052",
+                        "EFO_0000589",
+                        "EFO_0009386",
+                        "MONDO_0021179",
+                        "EFO_0000508",
+                        "OTAR_0000020",
+                        "MONDO_0100545",
+                        "OTAR_0000018"
+                    ],
+                    "descendants": [
+                        "MONDO_0000211",
+                        "MONDO_0016418",
+                        "MONDO_0014889",
+                        "EFO_0006792",
+                        "MONDO_0003122",
+                        "MONDO_0012205",
+                        "EFO_1001050",
+                        "MONDO_0014835",
+                        "MONDO_0010080"
+                    ],
+                    "therapeutic_areas": [
+                        "EFO_0000618",
+                        "OTAR_0000018",
+                        "OTAR_0000020"
+                    ],
+                    "is_leaf": false,
+                    "concept_ids": null,
+                    "concept_names": null,
+                    "umls_cui": null,
+                    "snomed_full_names": null,
+                    "cui_semantic_type": null,
+                    "snomed_concept_ids": null
+                }
+            },
+            {
+                "id": "DOID_10113",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "DRUG_CENTRAL",
+                            "MONDO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "trypanosomiasis",
+                    "description": "Infection with protozoa of the genus trypanosoma.",
+                    "code": "http://purl.obolibrary.org/obo/DOID_10113",
+                    "xrefs": null,
+                    "parents": [
+                        "MONDO_0002428"
+                    ],
+                    "exact_synonyms": null,
+                    "related_synonyms": [
+                        "Trypanosomiases"
+                    ],
+                    "narrow_synonyms": [],
+                    "broad_synonyms": [],
+                    "obsolete_terms": [],
+                    "obsolete_xrefs": [],
+                    "children": [
+                        "MONDO_0001444",
+                        "EFO_0005225",
+                        "EFO_0008559"
+                    ],
+                    "ancestors": [
+                        "MONDO_0002428",
+                        "EFO_0001067",
+                        "EFO_0005741"
+                    ],
+                    "descendants": [
+                        "EFO_0005225",
+                        "EFO_0005529",
+                        "EFO_0008559",
+                        "MONDO_0001444"
+                    ],
+                    "therapeutic_areas": [
+                        "EFO_0005741"
+                    ],
+                    "is_leaf": false,
+                    "concept_ids": null,
+                    "concept_names": null,
+                    "umls_cui": null,
+                    "snomed_full_names": null,
+                    "cui_semantic_type": null,
+                    "snomed_concept_ids": null
+                }
+            },
+            {
+                "id": "DOID_10718",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "DRUG_CENTRAL",
+                            "MONDO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "giardiasis",
+                    "description": "An infection of the small intestine caused by the flagellated protozoan giardia lamblia. It is spread via contaminated food and water and by direct person-to-person contact.",
+                    "code": "http://purl.obolibrary.org/obo/DOID_10718",
+                    "xrefs": null,
+                    "parents": [
+                        "MONDO_0002428",
+                        "EFO_0009561"
+                    ],
+                    "exact_synonyms": null,
+                    "related_synonyms": [
+                        "Giardia",
+                        "lambliasis",
+                        "Giardiases",
+                        "infections, Giardia",
+                        "Lambliases"
+                    ],
+                    "narrow_synonyms": [],
+                    "broad_synonyms": [],
+                    "obsolete_terms": [],
+                    "obsolete_xrefs": [],
+                    "children": [],
+                    "ancestors": [
+                        "EFO_0010282",
+                        "EFO_0009431",
+                        "EFO_0009561",
+                        "EFO_0001067",
+                        "MONDO_0002428",
+                        "MONDO_0043424",
+                        "EFO_0005741"
+                    ],
+                    "descendants": [],
+                    "therapeutic_areas": [
+                        "EFO_0010282",
+                        "EFO_0005741"
+                    ],
+                    "is_leaf": false,
+                    "concept_ids": [
+                        "21000021"
+                    ],
+                    "concept_names": [
+                        "Giardiasis"
+                    ],
+                    "umls_cui": "C0017536",
+                    "snomed_full_names": [
+                        "Giardiasis"
+                    ],
+                    "cui_semantic_type": "T047",
+                    "snomed_concept_ids": [
+                        "58265007.0"
+                    ]
+                }
+            }
+        ]
+    },
+    "CCO": {
+        "common_keys": [
+            "definition",
+            "xrefs",
+            "ontology",
+            "sources",
+            "synonyms",
+            "name"
+        ],
+        "samples": [
+            {
+                "id": "GO_0000015",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "phosphopyruvate hydratase complex",
+                    "definition": "A multimeric enzyme complex, usually a dimer or an octamer, that catalyzes the conversion of 2-phospho-D-glycerate to phosphoenolpyruvate and water.",
+                    "xrefs": [
+                        "GOC:jl",
+                        "ISBN:0198506732"
+                    ],
+                    "synonyms": [
+                        "enolase complex"
+                    ],
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            },
+            {
+                "id": "GO_0000109",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "nucleotide-excision repair complex",
+                    "definition": "Any complex formed of proteins that act in nucleotide-excision repair.",
+                    "xrefs": [
+                        "PMID:10915862"
+                    ],
+                    "synonyms": [
+                        "UvrB-UvrC complex",
+                        "UvrBC complex"
+                    ],
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            },
+            {
+                "id": "GO_0000110",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "nucleotide-excision repair factor 1 complex",
+                    "definition": "One of several protein complexes involved in nucleotide-excision repair; possesses DNA damage recognition and endodeoxynuclease activities. In S. cerevisiae, it is composed of Rad1p, Rad10p, and Rad14p; in human the subunits are ERCC4/XPF, ERCC1 and XPA, respectively.",
+                    "xrefs": [
+                        "PMID:10915862"
+                    ],
+                    "synonyms": [
+                        "NEF1 complex",
+                        "XPA-ERCC1-ERCC4 complex"
+                    ],
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            }
+        ]
+    },
+    "DRG": {
+        "common_keys": [
+            "black_box_warning",
+            "rgb",
+            "accession_numbers",
+            "number_of_formulations",
+            "sp_count",
+            "oh_nh",
+            "alogs",
+            "has_been_withdrawn",
+            "sp2_count",
+            "aromatic_carbons",
+            "rotatable_bonds",
+            "halogen_count",
+            "fda_labels",
+            "year_of_first_approval",
+            "sp3_count",
+            "cd_formula",
+            "o_n",
+            "synonyms",
+            "trade_names",
+            "chemical_abstracts_service_number",
+            "source_ids",
+            "inchi_key",
+            "mrdef",
+            "maximum_clinical_trial_phase",
+            "hetero_sp2_count",
+            "status",
+            "canonical_smiles",
+            "calculated_log_p",
+            "struct_id",
+            "inchi",
+            "mol_image_base64",
+            "description",
+            "name",
+            "is_approved",
+            "lipinski",
+            "tpsa",
+            "unique_ingredient_identifier",
+            "cd_mol_weight",
+            "sources",
+            "enhanced_stereo",
+            "cd_id",
+            "type",
+            "mol_file_base64"
+        ],
+        "samples": [
+            {
+                "id": "CHEMBL1000",
+                "properties": {
+                    "name": "CETIRIZINE",
+                    "inchi_key": "ZKLPARSLTMPFCP-UHFFFAOYSA-N",
+                    "type": "Small molecule",
+                    "synonyms": [
+                        "Cetirizine",
+                        "Cetirizinum",
+                        "Cetirizin",
+                        "Cetiderm",
+                        "AC-170",
+                        "Cetirizina"
+                    ],
+                    "description": "Small molecule drug with a maximum clinical trial phase of IV (across all indications) that was first approved in 1995 and has 9 approved and 17 investigational indications.",
+                    "accession_numbers": null,
+                    "canonical_smiles": "O=C(O)COCCN1CCN(C(c2ccccc2)c2ccc(Cl)cc2)CC1",
+                    "chemical_abstracts_service_number": "83881-51-0",
+                    "unique_ingredient_identifier": "YO7261ME24",
+                    "black_box_warning": false,
+                    "year_of_first_approval": 1995,
+                    "maximum_clinical_trial_phase": 4.0,
+                    "has_been_withdrawn": false,
+                    "is_approved": true,
+                    "trade_names": null,
+                    "sources": {
+                        "direct": [
+                            "DRUG_BANK"
+                        ],
+                        "indirect": []
+                    },
+                    "source_ids": [
+                        "DB00341",
+                        "3561"
+                    ],
+                    "cd_id": "2666",
+                    "cd_formula": "C21H25ClN2O3",
+                    "cd_mol_weight": 388.89,
+                    "calculated_log_p": 2.08,
+                    "alogs": -3.77,
+                    "tpsa": 53.01,
+                    "lipinski": 0.0,
+                    "number_of_formulations": 494,
+                    "mol_file_base64": "CiAgLUlORElHTy0wODE1MTcxMjEwMkQKCiAyNyAyOSAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMDk5\nOSBWMjAwMAogICAtMS43ODcxICAgLTMuMjExOSAgICAwLjAwMDAgQyAgIDAgIDAgIDAgIDAgIDAg\nIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAgLTEuMDcyNyAgIC0zLjYyMzQgICAgMC4wMDAwIE4gICAw\nICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgIC0yLjUwMTYgICAtMy42MjM0ICAg\nIDAuMDAwMCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogICAtMS43ODcx\nICAgLTIuMzg2OSAgICAwLjAwMDAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAg\nIDAKICAgLTAuMzU2MiAgIC0zLjIxMTkgICAgMC4wMDAwIEMgICAwICAwICAwICAwICAwICAwICAw\nICAwICAwICAwICAwICAwCiAgIC0xLjA3MjcgICAtNC40NDg0ICAgIDAuMDAwMCBDICAgMCAgMCAg\nMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogICAtMi41MDE2ICAgLTQuNDQ4NCAgICAwLjAw\nMDAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAgLTMuMjE0MCAgIC0z\nLjIxMTkgICAgMC4wMDAwIEMgICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAg\nIC0yLjUwMzYgICAtMS45NzM0ICAgIDAuMDAwMCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAg\nMCAgMCAgMCAgMAogICAtMS4wNzI3ICAgLTEuOTczNCAgICAwLjAwMDAgQyAgIDAgIDAgIDAgIDAg\nIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAgIDAuMzU2MiAgIC0zLjYyMzQgICAgMC4wMDAwIEMg\nICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgIC0wLjM1NjIgICAtNC44NjE5\nICAgIDAuMDAwMCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogICAtMy4y\nMTQwICAgLTQuODYxOSAgICAwLjAwMDAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAg\nIDAgIDAKICAgLTMuOTMwNSAgIC0zLjYyMzQgICAgMC4wMDAwIEMgICAwICAwICAwICAwICAwICAw\nICAwICAwICAwICAwICAwICAwCiAgIC0yLjUwMzYgICAtMS4xNDg0ICAgIDAuMDAwMCBDICAgMCAg\nMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogICAtMS4wNzI3ICAgLTEuMTQ4NCAgICAw\nLjAwMDAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAgIDAuMzU2MiAg\nIC00LjQ0ODQgICAgMC4wMDAwIE4gICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAw\nCiAgIC0zLjkzMDUgICAtNC40NDg0ICAgIDAuMDAwMCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAg\nMCAgMCAgMCAgMCAgMAogICAtMS43ODcxICAgLTAuNzM3MCAgICAwLjAwMDAgQyAgIDAgIDAgIDAg\nIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAgIDEuMDcwNiAgIC00Ljg2MTkgICAgMC4wMDAw\nIEMgICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgIC00LjY0NDkgICAtNC44\nNjE5ICAgIDAuMDAwMCBDbCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogICAg\nMS43ODUxICAgLTQuNDQ4NCAgICAwLjAwMDAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAg\nIDAgIDAgIDAKICAgIDIuNDk5NSAgIC00Ljg2MTkgICAgMC4wMDAwIE8gICAwICAwICAwICAwICAw\nICAwICAwICAwICAwICAwICAwICAwCiAgICAzLjIxNjAgICAtNC40NDg0ICAgIDAuMDAwMCBDICAg\nMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogICAgMy45MzA1ICAgLTQuODYxOSAg\nICAwLjAwMDAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAgIDQuNjQ0\nOSAgIC00LjQ0ODQgICAgMC4wMDAwIE8gICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAw\nICAwCiAgICAzLjkzMDUgICAtNS42ODY5ICAgIDAuMDAwMCBPICAgMCAgMCAgMCAgMCAgMCAgMCAg\nMCAgMCAgMCAgMCAgMCAgMAogIDEgIDIgIDEgIDAgIDAgIDAgIDAKICAxICAzICAxICAwICAwICAw\nICAwCiAgMSAgNCAgMSAgMCAgMCAgMCAgMAogIDIgIDUgIDEgIDAgIDAgIDAgIDAKICAyICA2ICAx\nICAwICAwICAwICAwCiAgMyAgNyAgMiAgMCAgMCAgMCAgMAogIDMgIDggIDEgIDAgIDAgIDAgIDAK\nICA0ICA5ICAyICAwICAwICAwICAwCiAgNCAxMCAgMSAgMCAgMCAgMCAgMAogIDUgMTEgIDEgIDAg\nIDAgIDAgIDAKICA2IDEyICAxICAwICAwICAwICAwCiAgNyAxMyAgMSAgMCAgMCAgMCAgMAogIDgg\nMTQgIDIgIDAgIDAgIDAgIDAKICA5IDE1ICAxICAwICAwICAwICAwCiAxMCAxNiAgMiAgMCAgMCAg\nMCAgMAogMTEgMTcgIDEgIDAgIDAgIDAgIDAKIDEyIDE3ICAxICAwICAwICAwICAwCiAxMyAxOCAg\nMiAgMCAgMCAgMCAgMAogMTQgMTggIDEgIDAgIDAgIDAgIDAKIDE1IDE5ICAyICAwICAwICAwICAw\nCiAxNiAxOSAgMSAgMCAgMCAgMCAgMAogMTcgMjAgIDEgIDAgIDAgIDAgIDAKIDE4IDIxICAxICAw\nICAwICAwICAwCiAyMCAyMiAgMSAgMCAgMCAgMCAgMAogMjIgMjMgIDEgIDAgIDAgIDAgIDAKIDIz\nIDI0ICAxICAwICAwICAwICAwCiAyNCAyNSAgMSAgMCAgMCAgMCAgMAogMjUgMjYgIDEgIDAgIDAg\nIDAgIDAKIDI1IDI3ICAyICAwICAwICAwICAwCk0gIEVORAo=",
+                    "mol_image_base64": "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\nn3+2tbIAwo0DSJz9+Gx55BePXF5idb2ve87ec92QIYAAAEMvBwwuWnQliFz9lTqRG82QIIAIIBNc\n6I/eKN97/3vl4V88XO49e2/19e1z377hQYUHPzxY1Y8kxAAADK1z5zpLrTZv7syE5KT07JCVYvWz\nxkECCFMKIAAAIIAIIAIIAAAIIAIIAAAIIAggAAAggAggAAAggAggAAAggAggAggAAAggAggAAAgg\nCCAAACCACCAAACCACCAAACCACCACCAAACCACCAAACCAIIAAAIIAIIAAAIIAIIAAAIIAIIAIIAAAI\nIAIIAAAIIAggAAAggAggAAAggAggLgEAAAKIACKAAACAACKAAACAACKACCAAACCACCAAACCAIIAA\nAIAAIoAAAIAAIoAAAIAAIoAIIAAAIIAIIAAAIIAggAAAgAAigAAAgAAigAAAgAAigAggAAAggAgg\nAAAggCCAAACAACKAAACAACKAAACAACKACCAAACCACCAAACCAIIAAAIAAIoAAAIAAIoAAAMCoOXny\nZM+hYjKvRQABAIAJg0U/XosAAgAACCAAAIAAAgAAIIAAAAACCAAAgAACAAA38c47pXz3u6V8+cul\nfOYzpXzqU6UsXFjKnXeW8oMflHL2rGskgAAAQAMOHChl/vxO6MjX7beX8tnPfvLXEkbyOgQQAACY\nssx6fPrTnZCxcWMpL75Yyrlzne+dP1/KoUOlfOlLV4LIM8+4ZgIIAABMQcJGHT6efPLGr33ooSuz\nI2+95doJIAAAMElr13ZCxX333fy1mQ353Oc6r3/4YddOAAEAgEnILEY9+5GZkF6kGL2eBUkgQQAB\nAICepLajDhO9eu+9K7UgvYYWBBAAAKhqPhIkUmA+GQsWdH7uhz90DQUQAADo0aOPdoLEXXdN7uey\nPa/dsAQQAACYlMce6wSJHDQ4GTkPRAARQAAAYFLGxztBIkuqepUakLpw/Uc/cg0FEAAA6NGbb14p\nKH/99d5+5vnnO69PCKkPK0QAAQCAnnzhC51AsXlzb6//+tc7r8/5IQggAAAwKfUyrHwdOHDj19Zn\ngNiCVwABAIApy+xHvazqu9+99oDBLLUaG7tS+7F9u2smgAAAwDR885tXAsb8+Z0lVps2lXL33Z1/\nrwNKds5CAAEAgGn78Y9L+epXrwSR+isBJLMkvRaqI4AAAEDPstXuiROdbXbzd7tdCSAAAIAAAgAA\nIIAAAAACCAAAIIAAAAAIIAAAgAACAAAggAAAAAIIAAAggAAAAAggAACAAAIAACCAAAAAAggAACCA\nuAQAAIAAAgAACCAAAAACCAAAIIAAAAAIIAAAgAACAAAIIAAAAAIIAAAggAAAAAggAACAAAIAAAgg\nAAAAAggAACCAAAAACCAAAIAAAgAACCAAAAACCAAAIIAAAAAIIAAAgAACAAAIIAAAAAIIAAAggAAA\nAAggAACAAAIAAAggAAAAAggAACCAAAAACCAAAIAAAgAAIIAAAAACCAAAIIAAAAAIIAAAgAACAAAg\ngAAAAAIIAAAggAAAAAggAACAAAIAACCAAAAAAggAACCAAAAACCAAAIAAAgAAIIAAAAACCAAAIIAA\nAAAIIAAAgAACAAAggAAAAAIIAAAggAAAAAggAACAAAIAACCAAAAAAggAAIAAAgAACCAAAIAAAgAA\nIIAAAAACCAAAgAACAAAIIAAAgAACAAAggAAAAAIIAACAAAIAAAggAACAAAIAACCAAAAAAggAAIAA\nAgAACCAAAIAAAgAAIIAAAAACCAAAgAACAAAIIAAAwKj6/7vQuCEJs/lCAAAAAElFTkSuQmCC",
+                    "mrdef": "A potent second-generation histamine H1 antagonist that is effective in the treatment of allergic rhinitis, chronic urticaria, and pollen-induced asthma. Unlike many traditional antihistamines, it does not cause drowsiness or anticholinergic side effects.",
+                    "enhanced_stereo": true,
+                    "aromatic_carbons": 12,
+                    "sp3_count": 8,
+                    "sp2_count": 1,
+                    "sp_count": 0,
+                    "halogen_count": 1,
+                    "hetero_sp2_count": 1,
+                    "rotatable_bonds": 8,
+                    "o_n": 5,
+                    "oh_nh": 1,
+                    "inchi": "InChI=1S/C21H25ClN2O3/c22-19-8-6-18(7-9-19)21(17-4-2-1-3-5-17)24-12-10-23(11-13-24)14-15-27-16-20(25)26/h1-9,21H,10-16H2,(H,25,26)",
+                    "rgb": 17.0,
+                    "fda_labels": 478,
+                    "status": "OFP",
+                    "struct_id": "581"
+                }
+            },
+            {
+                "id": "CHEMBL100014",
+                "properties": {
+                    "name": "AN-9",
+                    "inchi_key": "GYKLFBYWXZYSOW-UHFFFAOYSA-N",
+                    "type": "Small molecule",
+                    "synonyms": [
+                        "An-9",
+                        "Butyric Acid 2,2-Dimethyl-Propionyloxymethyl Ester(An9)",
+                        "Butyric Acid 2,2-Dimethyl-Propionyloxymethyl Ester",
+                        "Pivanex"
+                    ],
+                    "description": "Small molecule drug with a maximum clinical trial phase of II (across all indications) and has 3 investigational indications.",
+                    "accession_numbers": null,
+                    "canonical_smiles": "CCCC(=O)OCOC(=O)C(C)(C)C",
+                    "chemical_abstracts_service_number": null,
+                    "unique_ingredient_identifier": null,
+                    "black_box_warning": false,
+                    "year_of_first_approval": null,
+                    "maximum_clinical_trial_phase": 2.0,
+                    "has_been_withdrawn": false,
+                    "is_approved": false,
+                    "trade_names": null,
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS"
+                        ],
+                        "indirect": []
+                    },
+                    "source_ids": [
+                        "DB05103"
+                    ],
+                    "cd_id": null,
+                    "cd_formula": null,
+                    "cd_mol_weight": null,
+                    "calculated_log_p": null,
+                    "alogs": null,
+                    "tpsa": null,
+                    "lipinski": null,
+                    "number_of_formulations": null,
+                    "mol_file_base64": null,
+                    "mol_image_base64": null,
+                    "mrdef": null,
+                    "enhanced_stereo": null,
+                    "aromatic_carbons": null,
+                    "sp3_count": null,
+                    "sp2_count": null,
+                    "sp_count": null,
+                    "halogen_count": null,
+                    "hetero_sp2_count": null,
+                    "rotatable_bonds": null,
+                    "o_n": null,
+                    "oh_nh": null,
+                    "inchi": null,
+                    "rgb": null,
+                    "fda_labels": null,
+                    "status": null,
+                    "struct_id": null
+                }
+            },
+            {
+                "id": "CHEMBL100109",
+                "properties": {
+                    "name": "CHEMBL100109",
+                    "inchi_key": "UCQIHCRMWNRFNP-QYZOEREBSA-N",
+                    "type": "Small molecule",
+                    "synonyms": [],
+                    "description": "Small molecule drug.",
+                    "accession_numbers": null,
+                    "canonical_smiles": "CC(=O)N[C@H](Cc1ccccc1)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCCN)B(O)O",
+                    "chemical_abstracts_service_number": null,
+                    "unique_ingredient_identifier": null,
+                    "black_box_warning": false,
+                    "year_of_first_approval": null,
+                    "maximum_clinical_trial_phase": null,
+                    "has_been_withdrawn": false,
+                    "is_approved": null,
+                    "trade_names": null,
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS"
+                        ],
+                        "indirect": []
+                    },
+                    "source_ids": [
+                        "DB07658"
+                    ],
+                    "cd_id": null,
+                    "cd_formula": null,
+                    "cd_mol_weight": null,
+                    "calculated_log_p": null,
+                    "alogs": null,
+                    "tpsa": null,
+                    "lipinski": null,
+                    "number_of_formulations": null,
+                    "mol_file_base64": null,
+                    "mol_image_base64": null,
+                    "mrdef": null,
+                    "enhanced_stereo": null,
+                    "aromatic_carbons": null,
+                    "sp3_count": null,
+                    "sp2_count": null,
+                    "sp_count": null,
+                    "halogen_count": null,
+                    "hetero_sp2_count": null,
+                    "rotatable_bonds": null,
+                    "o_n": null,
+                    "oh_nh": null,
+                    "inchi": null,
+                    "rgb": null,
+                    "fda_labels": null,
+                    "status": null,
+                    "struct_id": null
+                }
+            }
+        ]
+    },
+    "ANA": {
+        "common_keys": [
+            "definition",
+            "xrefs",
+            "ontology",
+            "sources",
+            "synonyms",
+            "name"
+        ],
+        "samples": [
+            {
+                "id": "UBERON_0000001",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "UBERON"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "gross anatomical part",
+                    "definition": "Anatomical structure that is part of a multicellular organism and is at the gross anatomical level, e.g. above the level of a cell.  Included are portions of organism substances such as blood, multi-cell-part structures such as axon tracts, acellular anatomical structures such as hair, and organism subdivisions such as head. Excluded is the whole organism and more granular parts of the organism, such as atoms, molecules, macromolecular complexes and cells.",
+                    "xrefs": [
+                        "CARO:0001008"
+                    ],
+                    "synonyms": null,
+                    "ontology": {
+                        "description": "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.",
+                        "title": "Uber-anatomy ontology",
+                        "license": "http://creativecommons.org/licenses/by/3.0/",
+                        "version": "2026-04-01"
+                    }
+                }
+            },
+            {
+                "id": "UBERON_0000002",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "UBERON"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "uterine cervix",
+                    "definition": "Lower, narrow portion of the uterus where it joins with the top end of the vagina.",
+                    "xrefs": [
+                        "BTO:0001421",
+                        "BTO:0002249",
+                        "CALOHA:TS-0134",
+                        "EFO:0000979",
+                        "EMAPA:29927",
+                        "EV:0100114",
+                        "FMA:17740",
+                        "GAID:376",
+                        "MA:0000392",
+                        "MAT:0000292",
+                        "MESH:D002584",
+                        "NCIT:C12311",
+                        "SCTID:181453009",
+                        "UMLS:C0007874",
+                        "VHOG:0001359",
+                        "Wikipedia:Cervix",
+                        "galen:CervixUteri"
+                    ],
+                    "synonyms": [
+                        "cervix",
+                        "canalis cervicis uteri",
+                        "caudal segment of uterus",
+                        "cervical canal of uterus",
+                        "cervix uteri",
+                        "neck of uterus",
+                        "uterine cervix",
+                        "cervical canal",
+                        "cervix of uterus"
+                    ],
+                    "ontology": {
+                        "description": "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.",
+                        "title": "Uber-anatomy ontology",
+                        "license": "http://creativecommons.org/licenses/by/3.0/",
+                        "version": "2026-04-01"
+                    }
+                }
+            },
+            {
+                "id": "UBERON_0000003",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "UBERON"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "naris",
+                    "definition": "Orifice of the olfactory system. The naris is the route by which odorants enter the olfactory system[MAH].",
+                    "xrefs": [
+                        "AAO:0000311",
+                        "EHDAA2:0001225",
+                        "EHDAA:9083",
+                        "EMAPA:17847",
+                        "MA:0000282",
+                        "SCTID:272650008",
+                        "VHOG:0000663",
+                        "galen:Naris"
+                    ],
+                    "synonyms": null,
+                    "ontology": {
+                        "description": "Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data.",
+                        "title": "Uber-anatomy ontology",
+                        "license": "http://creativecommons.org/licenses/by/3.0/",
+                        "version": "2026-04-01"
+                    }
+                }
+            }
+        ]
+    },
+    "EXP": {
+        "common_keys": [
+            "sources",
+            "name",
+            "source_categories",
+            "source_details"
+        ],
+        "samples": [
+            {
+                "id": "MESH:C000188",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "CTD"
+                        ],
+                        "indirect": [
+                            "MESH"
+                        ]
+                    },
+                    "name": "alachlor",
+                    "source_categories": [
+                        "Commercial product"
+                    ],
+                    "source_details": null
+                }
+            },
+            {
+                "id": "MESH:C000228",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "CTD"
+                        ],
+                        "indirect": [
+                            "MESH"
+                        ]
+                    },
+                    "name": "aristolochic acid I",
+                    "source_categories": [
+                        "Dietary"
+                    ],
+                    "source_details": null
+                }
+            },
+            {
+                "id": "MESH:C000591741",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "CTD"
+                        ],
+                        "indirect": [
+                            "MESH"
+                        ]
+                    },
+                    "name": "Firemaster 550",
+                    "source_categories": [
+                        "Commercial product",
+                        "Environmental"
+                    ],
+                    "source_details": "gymnastics equipment, air, and dust"
+                }
+            }
+        ]
+    },
+    "GEN": {
+        "common_keys": [
+            "hallmarks_attributes",
+            "associated_proteins",
+            "chemical_probes",
+            "symbol_synonyms",
+            "obsolete_symbols",
+            "subcellular_locations",
+            "homologues",
+            "function_descriptions",
+            "xrefs",
+            "genomic_location",
+            "transcript_ids",
+            "obsolete_names",
+            "synonyms",
+            "biotype",
+            "transcription_start_site",
+            "target_class",
+            "name_synonyms",
+            "alternative_genes",
+            "cancer_hallmarks",
+            "symbol",
+            "name",
+            "target_enabling_package",
+            "sources",
+            "constraint_scores",
+            "canonical_exons",
+            "canonical_transcript",
+            "tractability",
+            "safety_liabilities"
+        ],
+        "samples": [
+            {
+                "id": "ENSG00000000003",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "BGEE"
+                        ],
+                        "indirect": []
+                    },
+                    "symbol": "TSPAN6",
+                    "biotype": "protein_coding",
+                    "transcript_ids": [
+                        "ENST00000494424",
+                        "ENST00000612152",
+                        "ENST00000373020",
+                        "ENST00000496771"
+                    ],
+                    "canonical_transcript": {
+                        "id": "ENST00000373020",
+                        "chromosome": "X",
+                        "start": 100627108,
+                        "end": 100636806,
+                        "strand": "-"
+                    },
+                    "canonical_exons": [
+                        "100632485",
+                        "100632568",
+                        "100630759",
+                        "100630866",
+                        "100627108",
+                        "100629986",
+                        "100636608",
+                        "100636806",
+                        "100633405",
+                        "100633539",
+                        "100635178",
+                        "100635252",
+                        "100633931",
+                        "100634029",
+                        "100635558",
+                        "100635746"
+                    ],
+                    "genomic_location": {
+                        "chromosome": "X",
+                        "start": 100627108,
+                        "end": 100639991,
+                        "strand": -1
+                    },
+                    "alternative_genes": null,
+                    "name": "tetraspanin 6",
+                    "hallmarks_attributes": null,
+                    "cancer_hallmarks": null,
+                    "synonyms": [
+                        {
+                            "label": "Tetraspanin-6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "TSPAN6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "TM4SF6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "UNQ767/PRO1560",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Tspan-6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "T245",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "TSPAN-6",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "A15 homolog",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Putative NF-kappa-B-activating protein 321",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "T245 protein",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Tetraspanin TM4-D",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Transmembrane 4 superfamily member 6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "T245",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TM4SF6",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TSPAN-6",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tetraspanin-6",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "A15 homolog",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "putative NF-kappa-B-activating protein 321",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tetraspan TM4SF",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tetraspanin TM4-D",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "transmembrane 4 superfamily member 6",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TSPAN6",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "symbol_synonyms": [
+                        {
+                            "label": "TSPAN6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "TM4SF6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "UNQ767/PRO1560",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Tspan-6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "T245",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "TSPAN-6",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "T245",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TM4SF6",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TSPAN-6",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TSPAN6",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "name_synonyms": [
+                        {
+                            "label": "Tetraspanin-6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "A15 homolog",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Putative NF-kappa-B-activating protein 321",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "T245 protein",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Tetraspanin TM4-D",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Transmembrane 4 superfamily member 6",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "tetraspanin-6",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "A15 homolog",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "putative NF-kappa-B-activating protein 321",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tetraspan TM4SF",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tetraspanin TM4-D",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "transmembrane 4 superfamily member 6",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "function_descriptions": [],
+                    "subcellular_locations": [
+                        {
+                            "location": "Membrane",
+                            "source": "uniprot",
+                            "term_sl": "SL-0162",
+                            "label_sl": "Cellular component"
+                        },
+                        {
+                            "location": "Cell Junctions",
+                            "source": "HPA_main",
+                            "term_sl": "SL-0038",
+                            "label_sl": "Cell junction"
+                        },
+                        {
+                            "location": "Cytosol",
+                            "source": "HPA_main",
+                            "term_sl": "SL-0091",
+                            "label_sl": "Cytosol"
+                        },
+                        {
+                            "location": "Nucleoli fibrillar center",
+                            "source": "HPA_additional",
+                            "term_sl": "SL-0497",
+                            "label_sl": "Nucleolus fibrillar center"
+                        }
+                    ],
+                    "target_class": null,
+                    "obsolete_symbols": [
+                        {
+                            "label": "TM4SF6",
+                            "source": "HGNC"
+                        }
+                    ],
+                    "obsolete_names": [
+                        {
+                            "label": "transmembrane 4 superfamily member 6",
+                            "source": "HGNC"
+                        }
+                    ],
+                    "constraint_scores": [
+                        {
+                            "constraint_type": "syn",
+                            "score": -0.47468,
+                            "exp": 30.657,
+                            "obs": 34,
+                            "oe": 1.1091,
+                            "oe_lower": 0.843,
+                            "oe_upper": 1.476,
+                            "upper_rank": null,
+                            "upper_bin": null,
+                            "upper_bin6": null
+                        },
+                        {
+                            "constraint_type": "mis",
+                            "score": 0.59223,
+                            "exp": 80.999,
+                            "obs": 66,
+                            "oe": 0.81482,
+                            "oe_lower": 0.667,
+                            "oe_upper": 1.0,
+                            "upper_rank": null,
+                            "upper_bin": null,
+                            "upper_bin6": null
+                        },
+                        {
+                            "constraint_type": "lof",
+                            "score": 0.066079,
+                            "exp": 7.865,
+                            "obs": 3,
+                            "oe": 0.38144,
+                            "oe_lower": 0.173,
+                            "oe_upper": 0.985,
+                            "upper_rank": 10507,
+                            "upper_bin": 5,
+                            "upper_bin6": 3
+                        }
+                    ],
+                    "target_enabling_package": {
+                        "target_from_source_id": null,
+                        "description": null,
+                        "therapeutic_area": null,
+                        "url": null
+                    },
+                    "associated_proteins": [
+                        {
+                            "id": "O43657",
+                            "source": "uniprot_swissprot"
+                        },
+                        {
+                            "id": "A0A087WYV6",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "ENSP00000362111",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "ENSP00000482130",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "Q54A42",
+                            "source": "uniprot_obsolete"
+                        },
+                        {
+                            "id": "Q6IAN9",
+                            "source": "uniprot_obsolete"
+                        }
+                    ],
+                    "xrefs": [
+                        {
+                            "id": "11858",
+                            "source": "HGNC"
+                        },
+                        {
+                            "id": "IPR018499",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "IPR000301",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "IPR018503",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "IPR008952",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "IPR048232",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "SignalP-TM",
+                            "source": "signalP"
+                        }
+                    ],
+                    "chemical_probes": null,
+                    "homologues": [
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000110900",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN11",
+                            "query_percentage_identity": 26.5306,
+                            "target_percentage_identity": 25.6917,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000158457",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN33",
+                            "query_percentage_identity": 25.7143,
+                            "target_percentage_identity": 22.2615,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000231738",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN19",
+                            "query_percentage_identity": 17.551,
+                            "target_percentage_identity": 17.3387,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000104894",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CD37",
+                            "query_percentage_identity": 21.2245,
+                            "target_percentage_identity": 18.5053,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000064201",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN32",
+                            "query_percentage_identity": 13.4694,
+                            "target_percentage_identity": 10.3125,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000182612",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN10",
+                            "query_percentage_identity": 21.2245,
+                            "target_percentage_identity": 14.6479,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000085117",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CD82",
+                            "query_percentage_identity": 24.4898,
+                            "target_percentage_identity": 22.4719,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000117472",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN1",
+                            "query_percentage_identity": 25.7143,
+                            "target_percentage_identity": 26.1411,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000134198",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN2",
+                            "query_percentage_identity": 19.5918,
+                            "target_percentage_identity": 21.7195,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000112619",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "PRPH2",
+                            "query_percentage_identity": 20.4082,
+                            "target_percentage_identity": 14.4509,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000177697",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CD151",
+                            "query_percentage_identity": 28.5714,
+                            "target_percentage_identity": 27.668,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000010278",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CD9",
+                            "query_percentage_identity": 21.2245,
+                            "target_percentage_identity": 22.807,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000011105",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN9",
+                            "query_percentage_identity": 25.3061,
+                            "target_percentage_identity": 25.9414,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000135452",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN31",
+                            "query_percentage_identity": 15.9184,
+                            "target_percentage_identity": 18.5714,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000114638",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "UPK1B",
+                            "query_percentage_identity": 20.0,
+                            "target_percentage_identity": 18.8462,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000105668",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "UPK1A",
+                            "query_percentage_identity": 22.0408,
+                            "target_percentage_identity": 20.9302,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000127324",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN8",
+                            "query_percentage_identity": 24.898,
+                            "target_percentage_identity": 25.7384,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000110651",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CD81",
+                            "query_percentage_identity": 21.6327,
+                            "target_percentage_identity": 22.4576,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000143119",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CD53",
+                            "query_percentage_identity": 22.0408,
+                            "target_percentage_identity": 24.6575,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000130167",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN16",
+                            "query_percentage_identity": 20.4082,
+                            "target_percentage_identity": 20.4918,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000157570",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN18",
+                            "query_percentage_identity": 23.2653,
+                            "target_percentage_identity": 22.9839,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000168785",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN5",
+                            "query_percentage_identity": 25.3061,
+                            "target_percentage_identity": 23.1343,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000106025",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN12",
+                            "query_percentage_identity": 21.2245,
+                            "target_percentage_identity": 17.0492,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000099282",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN15",
+                            "query_percentage_identity": 20.4082,
+                            "target_percentage_identity": 17.0068,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000106537",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN13",
+                            "query_percentage_identity": 17.551,
+                            "target_percentage_identity": 21.0784,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000135404",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CD63",
+                            "query_percentage_identity": 25.7143,
+                            "target_percentage_identity": 26.4706,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000108219",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN14",
+                            "query_percentage_identity": 25.3061,
+                            "target_percentage_identity": 22.963,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000140391",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN3",
+                            "query_percentage_identity": 26.9388,
+                            "target_percentage_identity": 26.087,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000149489",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "ROM1",
+                            "query_percentage_identity": 18.7755,
+                            "target_percentage_identity": 13.1054,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000214063",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN4",
+                            "query_percentage_identity": 24.4898,
+                            "target_percentage_identity": 25.2101,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000048140",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN17",
+                            "query_percentage_identity": 26.5306,
+                            "target_percentage_identity": 19.7568,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "other_paralog",
+                            "target_gene_id": "ENSG00000156298",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "TSPAN7",
+                            "query_percentage_identity": 59.1837,
+                            "target_percentage_identity": 58.2329,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9598",
+                            "species_name": "Chimpanzee",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSPTRG00000022087",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TSPAN6",
+                            "query_percentage_identity": 100.0,
+                            "target_percentage_identity": 100.0,
+                            "priority": 1
+                        },
+                        {
+                            "species_id": "10090",
+                            "species_name": "Mouse",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSMUSG00000067377",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "Tspan6",
+                            "query_percentage_identity": 93.0612,
+                            "target_percentage_identity": 93.0612,
+                            "priority": 3
+                        },
+                        {
+                            "species_id": "10116",
+                            "species_name": "Norway rat - BN/NHsdMcwi",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSRNOG00000003786",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "Tspan6",
+                            "query_percentage_identity": 93.4694,
+                            "target_percentage_identity": 93.4694,
+                            "priority": 4
+                        },
+                        {
+                            "species_id": "9986",
+                            "species_name": "Rabbit",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSOCUG00000011184",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TSPAN6",
+                            "query_percentage_identity": 95.5102,
+                            "target_percentage_identity": 95.5102,
+                            "priority": 5
+                        },
+                        {
+                            "species_id": "10141",
+                            "species_name": "Guinea Pig",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSCPOG00000005110",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TSPAN6",
+                            "query_percentage_identity": 91.4286,
+                            "target_percentage_identity": 91.4286,
+                            "priority": 6
+                        },
+                        {
+                            "species_id": "9615",
+                            "species_name": "Dog",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSCAFG00845015955",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TSPAN6",
+                            "query_percentage_identity": 94.6939,
+                            "target_percentage_identity": 94.6939,
+                            "priority": 7
+                        },
+                        {
+                            "species_id": "9823",
+                            "species_name": "Pig",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSSSCG00000012481",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TSPAN6",
+                            "query_percentage_identity": 96.7347,
+                            "target_percentage_identity": 96.7347,
+                            "priority": 8
+                        },
+                        {
+                            "species_id": "8364",
+                            "species_name": "Tropical clawed frog",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSXETG00000007608",
+                            "is_high_confidence": "0",
+                            "target_gene_symbol": "tspan6",
+                            "query_percentage_identity": 73.4694,
+                            "target_percentage_identity": 71.4286,
+                            "priority": 9
+                        },
+                        {
+                            "species_id": "7955",
+                            "species_name": "Zebrafish",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSDARG00000015759",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TSPAN6",
+                            "query_percentage_identity": 58.3673,
+                            "target_percentage_identity": 56.9721,
+                            "priority": 10
+                        }
+                    ],
+                    "tractability": [
+                        {
+                            "modality": "SM",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Structure with Ligand",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "High-Quality Ligand",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "High-Quality Pocket",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Med-Quality Pocket",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Druggable Family",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt loc high conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "GO CC high conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt loc med conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt SigP or TMHMM",
+                            "value": true
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "GO CC med conf",
+                            "value": true
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Human Protein Atlas loc",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Literature",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "UniProt Ubiquitination",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Database Ubiquitination",
+                            "value": true
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Half-life Data",
+                            "value": true
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Small Molecule Binder",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        }
+                    ],
+                    "safety_liabilities": null,
+                    "transcription_start_site": 100636806
+                }
+            },
+            {
+                "id": "ENSG00000000005",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "BGEE"
+                        ],
+                        "indirect": []
+                    },
+                    "symbol": "TNMD",
+                    "biotype": "protein_coding",
+                    "transcript_ids": [
+                        "ENST00000485971",
+                        "ENST00000373031"
+                    ],
+                    "canonical_transcript": {
+                        "id": "ENST00000373031",
+                        "chromosome": "X",
+                        "start": 100584936,
+                        "end": 100599885,
+                        "strand": "+"
+                    },
+                    "canonical_exons": [
+                        "100585231",
+                        "100585362",
+                        "100593895",
+                        "100594035",
+                        "100597504",
+                        "100597657",
+                        "100599016",
+                        "100599182",
+                        "100599508",
+                        "100599885",
+                        "100584936",
+                        "100585066",
+                        "100594261",
+                        "100594362"
+                    ],
+                    "genomic_location": {
+                        "chromosome": "X",
+                        "start": 100584936,
+                        "end": 100599885,
+                        "strand": 1
+                    },
+                    "alternative_genes": null,
+                    "name": "tenomodulin",
+                    "hallmarks_attributes": null,
+                    "cancer_hallmarks": null,
+                    "synonyms": [
+                        {
+                            "label": "Tenomodulin",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "TNMD",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "CHM1L",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "UNQ771/PRO1565",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "TeM",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "hTeM",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "ChM1L",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "hChM1L",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "myodulin",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "ChM1L",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "tendin",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "TEM",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "BRICD4",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "Chondromodulin-1-like protein",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Chondromodulin-I-like protein",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Myodulin",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Tendin",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "BRICHOS domain containing 4",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "BRICD4",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "CHM1L",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TEM",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tenomodulin",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "BRICHOS domain containing 4",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "chondromodulin-1-like protein",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "chondromodulin-I-like protein",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "chondromodulin-IB",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "hChM1L",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "hTeM",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "myodulin",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tendin",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TNMD",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "symbol_synonyms": [
+                        {
+                            "label": "TNMD",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "CHM1L",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "UNQ771/PRO1565",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "TeM",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "hTeM",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "ChM1L",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "hChM1L",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "myodulin",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "ChM1L",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "tendin",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "TEM",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "BRICD4",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "BRICD4",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "CHM1L",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TEM",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "TNMD",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "name_synonyms": [
+                        {
+                            "label": "Tenomodulin",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Chondromodulin-1-like protein",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Chondromodulin-I-like protein",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Myodulin",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Tendin",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "BRICHOS domain containing 4",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "tenomodulin",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "BRICHOS domain containing 4",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "chondromodulin-1-like protein",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "chondromodulin-I-like protein",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "chondromodulin-IB",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "hChM1L",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "hTeM",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "myodulin",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "tendin",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "function_descriptions": [
+                        "May be an angiogenesis inhibitor."
+                    ],
+                    "subcellular_locations": [
+                        {
+                            "location": "[Isoform 1]: Membrane",
+                            "source": "uniprot",
+                            "term_sl": "SL-0162",
+                            "label_sl": "Cellular component"
+                        },
+                        {
+                            "location": "Nucleus envelope",
+                            "source": "uniprot",
+                            "term_sl": "SL-0178",
+                            "label_sl": "Cellular component"
+                        },
+                        {
+                            "location": "[Isoform 2]: Membrane",
+                            "source": "uniprot",
+                            "term_sl": "SL-0162",
+                            "label_sl": "Cellular component"
+                        },
+                        {
+                            "location": "[Isoform 3]: Cytoplasm",
+                            "source": "uniprot",
+                            "term_sl": "SL-0086",
+                            "label_sl": "Cellular component"
+                        }
+                    ],
+                    "target_class": null,
+                    "obsolete_symbols": [],
+                    "obsolete_names": [],
+                    "constraint_scores": [
+                        {
+                            "constraint_type": "syn",
+                            "score": -0.46371,
+                            "exp": 38.347,
+                            "obs": 42,
+                            "oe": 1.0953,
+                            "oe_lower": 0.855,
+                            "oe_upper": 1.417,
+                            "upper_rank": null,
+                            "upper_bin": null,
+                            "upper_bin6": null
+                        },
+                        {
+                            "constraint_type": "mis",
+                            "score": 0.85895,
+                            "exp": 119.41,
+                            "obs": 93,
+                            "oe": 0.77881,
+                            "oe_lower": 0.658,
+                            "oe_upper": 0.925,
+                            "upper_rank": null,
+                            "upper_bin": null,
+                            "upper_bin6": null
+                        },
+                        {
+                            "constraint_type": "lof",
+                            "score": 0.0035119,
+                            "exp": 13.013,
+                            "obs": 6,
+                            "oe": 0.46109,
+                            "oe_lower": 0.251,
+                            "oe_upper": 0.91,
+                            "upper_rank": 9586,
+                            "upper_bin": 4,
+                            "upper_bin6": 2
+                        }
+                    ],
+                    "target_enabling_package": {
+                        "target_from_source_id": null,
+                        "description": null,
+                        "therapeutic_area": null,
+                        "url": null
+                    },
+                    "associated_proteins": [
+                        {
+                            "id": "Q9H2S6",
+                            "source": "uniprot_swissprot"
+                        },
+                        {
+                            "id": "ENSP00000362122",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "Q9HBX0",
+                            "source": "uniprot_obsolete"
+                        },
+                        {
+                            "id": "Q9UJG0",
+                            "source": "uniprot_obsolete"
+                        }
+                    ],
+                    "xrefs": [
+                        {
+                            "id": "17757",
+                            "source": "HGNC"
+                        },
+                        {
+                            "id": "IPR007084",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "IPR043405",
+                            "source": "InterPro"
+                        }
+                    ],
+                    "chemical_probes": null,
+                    "homologues": [
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "within_species_paralog",
+                            "target_gene_id": "ENSG00000136110",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "CNMD",
+                            "query_percentage_identity": 34.0694,
+                            "target_percentage_identity": 32.3353,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9598",
+                            "species_name": "Chimpanzee",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSPTRG00000022086",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 99.6845,
+                            "target_percentage_identity": 99.6845,
+                            "priority": 1
+                        },
+                        {
+                            "species_id": "9544",
+                            "species_name": "Macaque",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSMMUG00000008212",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 99.3691,
+                            "target_percentage_identity": 99.3691,
+                            "priority": 2
+                        },
+                        {
+                            "species_id": "10090",
+                            "species_name": "Mouse",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSMUSG00000031250",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "Tnmd",
+                            "query_percentage_identity": 96.2145,
+                            "target_percentage_identity": 96.2145,
+                            "priority": 3
+                        },
+                        {
+                            "species_id": "10116",
+                            "species_name": "Norway rat - BN/NHsdMcwi",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSRNOG00000060970",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "Tnmd",
+                            "query_percentage_identity": 94.0063,
+                            "target_percentage_identity": 93.125,
+                            "priority": 4
+                        },
+                        {
+                            "species_id": "9986",
+                            "species_name": "Rabbit",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSOCUG00000011179",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 97.7918,
+                            "target_percentage_identity": 97.7918,
+                            "priority": 5
+                        },
+                        {
+                            "species_id": "10141",
+                            "species_name": "Guinea Pig",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSCPOG00000039033",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 77.6025,
+                            "target_percentage_identity": 89.781,
+                            "priority": 6
+                        },
+                        {
+                            "species_id": "9615",
+                            "species_name": "Dog",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSCAFG00845015896",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 96.8454,
+                            "target_percentage_identity": 96.8454,
+                            "priority": 7
+                        },
+                        {
+                            "species_id": "9823",
+                            "species_name": "Pig",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSSSCG00000012480",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 98.1073,
+                            "target_percentage_identity": 98.1073,
+                            "priority": 8
+                        },
+                        {
+                            "species_id": "8364",
+                            "species_name": "Tropical clawed frog",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSXETG00000033578",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 54.2587,
+                            "target_percentage_identity": 54.2587,
+                            "priority": 9
+                        },
+                        {
+                            "species_id": "7955",
+                            "species_name": "Zebrafish",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSDARG00000052615",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "TNMD",
+                            "query_percentage_identity": 42.2713,
+                            "target_percentage_identity": 44.5183,
+                            "priority": 10
+                        }
+                    ],
+                    "tractability": [
+                        {
+                            "modality": "SM",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Structure with Ligand",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "High-Quality Ligand",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "High-Quality Pocket",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Med-Quality Pocket",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Druggable Family",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt loc high conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "GO CC high conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt loc med conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt SigP or TMHMM",
+                            "value": true
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "GO CC med conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Human Protein Atlas loc",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Literature",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "UniProt Ubiquitination",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Database Ubiquitination",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Half-life Data",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Small Molecule Binder",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        }
+                    ],
+                    "safety_liabilities": null,
+                    "transcription_start_site": 100584936
+                }
+            },
+            {
+                "id": "ENSG00000000419",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "BGEE"
+                        ],
+                        "indirect": []
+                    },
+                    "symbol": "DPM1",
+                    "biotype": "protein_coding",
+                    "transcript_ids": [
+                        "ENST00000494752",
+                        "ENST00000371584",
+                        "ENST00000684708",
+                        "ENST00000683048",
+                        "ENST00000682754",
+                        "ENST00000684628",
+                        "ENST00000683010",
+                        "ENST00000681979",
+                        "ENST00000371588",
+                        "ENST00000682713",
+                        "ENST00000684193",
+                        "ENST00000466152",
+                        "ENST00000371582",
+                        "ENST00000682366",
+                        "ENST00000413082",
+                        "ENST00000683466"
+                    ],
+                    "canonical_transcript": {
+                        "id": "ENST00000371588",
+                        "chromosome": "20",
+                        "start": 50934870,
+                        "end": 50958532,
+                        "strand": "-"
+                    },
+                    "canonical_exons": [
+                        "50940865",
+                        "50940933",
+                        "50958363",
+                        "50958532",
+                        "50945737",
+                        "50945762",
+                        "50942031",
+                        "50942126",
+                        "50945847",
+                        "50945923",
+                        "50955186",
+                        "50955285",
+                        "50948629",
+                        "50948662",
+                        "50936148",
+                        "50936262",
+                        "50934870",
+                        "50935236"
+                    ],
+                    "genomic_location": {
+                        "chromosome": "20",
+                        "start": 50934867,
+                        "end": 50959140,
+                        "strand": -1
+                    },
+                    "alternative_genes": null,
+                    "name": "dolichyl-phosphate mannosyltransferase subunit 1, catalytic",
+                    "hallmarks_attributes": null,
+                    "cancer_hallmarks": null,
+                    "synonyms": [
+                        {
+                            "label": "Dolichol-phosphate mannosyltransferase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "DPM1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "DPM synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "MPD synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "MPDS",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "CDGIE",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "Dolichol-phosphate mannose synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Dolichyl-phosphate beta-D-mannosyltransferase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Mannose-P-dolichol synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "DPM synthase complex, catalytic subunit",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "CDGIE",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "MPDS",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichol-phosphate mannosyltransferase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "DPM synthase complex, catalytic subunit",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "DPM synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "MPD synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichol monophosphate mannose synthase",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichol-phosphate mannose synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichyl-phosphate beta-D-mannosyltransferase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichyl-phosphate mannosyltransferase polypeptide 1 catalytic subunit",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "mannose-P-dolichol synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "DPM1",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "symbol_synonyms": [
+                        {
+                            "label": "DPM1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "DPM synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "MPD synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "MPDS",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "CDGIE",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "CDGIE",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "MPDS",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "DPM1",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "name_synonyms": [
+                        {
+                            "label": "Dolichol-phosphate mannosyltransferase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Dolichol-phosphate mannose synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Dolichyl-phosphate beta-D-mannosyltransferase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "Mannose-P-dolichol synthase subunit 1",
+                            "source": "uniprot"
+                        },
+                        {
+                            "label": "DPM synthase complex, catalytic subunit",
+                            "source": "HGNC"
+                        },
+                        {
+                            "label": "dolichol-phosphate mannosyltransferase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "DPM synthase complex, catalytic subunit",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "DPM synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "MPD synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichol monophosphate mannose synthase",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichol-phosphate mannose synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichyl-phosphate beta-D-mannosyltransferase subunit 1",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "dolichyl-phosphate mannosyltransferase polypeptide 1 catalytic subunit",
+                            "source": "NCBI_entrez"
+                        },
+                        {
+                            "label": "mannose-P-dolichol synthase subunit 1",
+                            "source": "NCBI_entrez"
+                        }
+                    ],
+                    "function_descriptions": [
+                        "Transfers mannose from GDP-mannose to dolichol monophosphate to form dolichol phosphate mannose (Dol-P-Man) which is the mannosyl donor in pathways leading to N-glycosylation, glycosyl phosphatidylinositol membrane anchoring, and O-mannosylation of proteins; catalytic subunit of the dolichol-phosphate mannose (DPM) synthase complex. ."
+                    ],
+                    "subcellular_locations": [
+                        {
+                            "location": "Endoplasmic reticulum",
+                            "source": "uniprot",
+                            "term_sl": "SL-0095",
+                            "label_sl": "Cellular component"
+                        }
+                    ],
+                    "target_class": null,
+                    "obsolete_symbols": [],
+                    "obsolete_names": [
+                        {
+                            "label": "dolichyl-phosphate mannosyltransferase polypeptide 1, catalytic subunit",
+                            "source": "HGNC"
+                        }
+                    ],
+                    "constraint_scores": [
+                        {
+                            "constraint_type": "syn",
+                            "score": -1.7579,
+                            "exp": 49.299,
+                            "obs": 65,
+                            "oe": 1.3185,
+                            "oe_lower": 1.079,
+                            "oe_upper": 1.621,
+                            "upper_rank": null,
+                            "upper_bin": null,
+                            "upper_bin6": null
+                        },
+                        {
+                            "constraint_type": "mis",
+                            "score": 0.37836,
+                            "exp": 141.67,
+                            "obs": 129,
+                            "oe": 0.91055,
+                            "oe_lower": 0.788,
+                            "oe_upper": 1.054,
+                            "upper_rank": null,
+                            "upper_bin": null,
+                            "upper_bin6": null
+                        },
+                        {
+                            "constraint_type": "lof",
+                            "score": 0.00016237,
+                            "exp": 17.98,
+                            "obs": 9,
+                            "oe": 0.50054,
+                            "oe_lower": 0.301,
+                            "oe_upper": 0.873,
+                            "upper_rank": 9161,
+                            "upper_bin": 4,
+                            "upper_bin6": 2
+                        }
+                    ],
+                    "target_enabling_package": {
+                        "target_from_source_id": null,
+                        "description": null,
+                        "therapeutic_area": null,
+                        "url": null
+                    },
+                    "associated_proteins": [
+                        {
+                            "id": "O60762",
+                            "source": "uniprot_swissprot"
+                        },
+                        {
+                            "id": "A0A0S2Z4Y5",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "A0A804HIB3",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "A0A804HIK9",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "A0A804HJ93",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "H0Y368",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "Q5QPJ9",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "Q5QPK2",
+                            "source": "uniprot_trembl"
+                        },
+                        {
+                            "id": "ENSP00000360638",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "ENSP00000360640",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "ENSP00000360644",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "ENSP00000394921",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "ENSP00000506986",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "ENSP00000507119",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "ENSP00000507404",
+                            "source": "ensembl_PRO"
+                        },
+                        {
+                            "id": "O15157",
+                            "source": "uniprot_obsolete"
+                        },
+                        {
+                            "id": "Q6IB78",
+                            "source": "uniprot_obsolete"
+                        },
+                        {
+                            "id": "Q96HK0",
+                            "source": "uniprot_obsolete"
+                        }
+                    ],
+                    "xrefs": [
+                        {
+                            "id": "3005",
+                            "source": "HGNC"
+                        },
+                        {
+                            "id": "R-HSA-162699",
+                            "source": "Reactome"
+                        },
+                        {
+                            "id": "R-HSA-4717374",
+                            "source": "Reactome"
+                        },
+                        {
+                            "id": "R-HSA-4719360",
+                            "source": "Reactome"
+                        },
+                        {
+                            "id": "R-HSA-4719377",
+                            "source": "Reactome"
+                        },
+                        {
+                            "id": "IPR039528",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "IPR001173",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "IPR029044",
+                            "source": "InterPro"
+                        },
+                        {
+                            "id": "SIDG06907",
+                            "source": "ProjectScore"
+                        }
+                    ],
+                    "chemical_probes": null,
+                    "homologues": [
+                        {
+                            "species_id": "9606",
+                            "species_name": "Human",
+                            "homology_type": "within_species_paralog",
+                            "target_gene_id": "ENSG00000120697",
+                            "is_high_confidence": "NULL",
+                            "target_gene_symbol": "ALG5",
+                            "query_percentage_identity": 26.1538,
+                            "target_percentage_identity": 20.9877,
+                            "priority": 0
+                        },
+                        {
+                            "species_id": "9598",
+                            "species_name": "Chimpanzee",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSPTRG00000013625",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 99.6154,
+                            "target_percentage_identity": 90.2439,
+                            "priority": 1
+                        },
+                        {
+                            "species_id": "9544",
+                            "species_name": "Macaque",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSMMUG00000002759",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 97.3077,
+                            "target_percentage_identity": 88.1533,
+                            "priority": 2
+                        },
+                        {
+                            "species_id": "10090",
+                            "species_name": "Mouse",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSMUSG00000078919",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "Dpm1",
+                            "query_percentage_identity": 91.1538,
+                            "target_percentage_identity": 91.1538,
+                            "priority": 3
+                        },
+                        {
+                            "species_id": "10116",
+                            "species_name": "Norway rat - BN/NHsdMcwi",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSRNOG00000010993",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "Dpm1",
+                            "query_percentage_identity": 91.1538,
+                            "target_percentage_identity": 91.1538,
+                            "priority": 4
+                        },
+                        {
+                            "species_id": "9986",
+                            "species_name": "Rabbit",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSOCUG00000014708",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 92.6923,
+                            "target_percentage_identity": 92.6923,
+                            "priority": 5
+                        },
+                        {
+                            "species_id": "10141",
+                            "species_name": "Guinea Pig",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSCPOG00000033471",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 91.5385,
+                            "target_percentage_identity": 91.5385,
+                            "priority": 6
+                        },
+                        {
+                            "species_id": "9615",
+                            "species_name": "Dog",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSCAFG00845026765",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 96.5385,
+                            "target_percentage_identity": 96.5385,
+                            "priority": 7
+                        },
+                        {
+                            "species_id": "9823",
+                            "species_name": "Pig",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSSSCG00000034952",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 94.2308,
+                            "target_percentage_identity": 94.5946,
+                            "priority": 8
+                        },
+                        {
+                            "species_id": "8364",
+                            "species_name": "Tropical clawed frog",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSXETG00000012303",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 82.3077,
+                            "target_percentage_identity": 75.3521,
+                            "priority": 9
+                        },
+                        {
+                            "species_id": "7955",
+                            "species_name": "Zebrafish",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "ENSDARG00000057011",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "DPM1",
+                            "query_percentage_identity": 80.7692,
+                            "target_percentage_identity": 84.0,
+                            "priority": 10
+                        },
+                        {
+                            "species_id": "7227",
+                            "species_name": "Drosophila melanogaster (Fruit fly) - GCA_000001215.4 [FlyBase annotation]",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "FBgn0032799",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "Dpm1",
+                            "query_percentage_identity": 68.4615,
+                            "target_percentage_identity": 73.8589,
+                            "priority": 11
+                        },
+                        {
+                            "species_id": "6239",
+                            "species_name": "Caenorhabditis elegans (Nematode, N2)",
+                            "homology_type": "ortholog_one2one",
+                            "target_gene_id": "WBGene00022044",
+                            "is_high_confidence": "1",
+                            "target_gene_symbol": "dpm-1",
+                            "query_percentage_identity": 58.8462,
+                            "target_percentage_identity": 64.0167,
+                            "priority": 12
+                        }
+                    ],
+                    "tractability": [
+                        {
+                            "modality": "SM",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Structure with Ligand",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "High-Quality Ligand",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "High-Quality Pocket",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Med-Quality Pocket",
+                            "value": false
+                        },
+                        {
+                            "modality": "SM",
+                            "id": "Druggable Family",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt loc high conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "GO CC high conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt loc med conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "UniProt SigP or TMHMM",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "GO CC med conf",
+                            "value": false
+                        },
+                        {
+                            "modality": "AB",
+                            "id": "Human Protein Atlas loc",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Literature",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "UniProt Ubiquitination",
+                            "value": false
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Database Ubiquitination",
+                            "value": true
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Half-life Data",
+                            "value": true
+                        },
+                        {
+                            "modality": "PR",
+                            "id": "Small Molecule Binder",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Approved Drug",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Advanced Clinical",
+                            "value": false
+                        },
+                        {
+                            "modality": "OC",
+                            "id": "Phase 1 Clinical",
+                            "value": false
+                        }
+                    ],
+                    "safety_liabilities": null,
+                    "transcription_start_site": 50958532
+                }
+            }
+        ]
+    },
+    "BPO": {
+        "common_keys": [
+            "definition",
+            "xrefs",
+            "ontology",
+            "sources",
+            "synonyms",
+            "name"
+        ],
+        "samples": [
+            {
+                "id": "GO_0000001",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "mitochondrion inheritance",
+                    "definition": "The distribution of mitochondria, including the mitochondrial genome, into daughter cells after mitosis or meiosis, mediated by interactions between mitochondria and the cytoskeleton.",
+                    "xrefs": [
+                        "GOC:mcc",
+                        "PMID:10873824",
+                        "PMID:11389764"
+                    ],
+                    "synonyms": [
+                        "mitochondrial inheritance"
+                    ],
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            },
+            {
+                "id": "GO_0000002",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "obsolete mitochondrial genome maintenance",
+                    "definition": "OBSOLETE. The maintenance of the structure and integrity of the mitochondrial genome; includes replication and segregation of the mitochondrial chromosome.",
+                    "xrefs": [
+                        "GOC:ai",
+                        "GOC:vw"
+                    ],
+                    "synonyms": null,
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            },
+            {
+                "id": "GO_0000003",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "GO"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "obsolete reproduction",
+                    "definition": "OBSOLETE. The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms.",
+                    "xrefs": [
+                        "GOC:go_curators",
+                        "GOC:isa_complete",
+                        "GOC:jl",
+                        "ISBN:0198506732"
+                    ],
+                    "synonyms": [
+                        "reproductive physiological process"
+                    ],
+                    "ontology": {
+                        "description": "The Gene Ontology (GO) provides a framework and set of concepts for describing the functions of gene products from all organisms.",
+                        "title": "Gene Ontology",
+                        "license": "http://creativecommons.org/licenses/by/4.0/",
+                        "version": "2025-07-22"
+                    }
+                }
+            }
+        ]
+    },
+    "PHE": {
+        "common_keys": [
+            "related_synonyms",
+            "parents",
+            "umls_cui",
+            "narrow_synonyms",
+            "ancestors",
+            "xrefs",
+            "obsolete_terms",
+            "broad_synonyms",
+            "description",
+            "name",
+            "exact_synonyms",
+            "snomed_full_names",
+            "concept_ids",
+            "children",
+            "descendants",
+            "ontology",
+            "sources",
+            "obsolete_xrefs",
+            "cui_semantic_type",
+            "concept_names",
+            "snomed_concept_ids",
+            "code",
+            "type"
+        ],
+        "samples": [
+            {
+                "id": "HP_0000001",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "HPO",
+                            "MEDDRA"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "All",
+                    "description": null,
+                    "code": null,
+                    "xrefs": null,
+                    "parents": null,
+                    "exact_synonyms": null,
+                    "related_synonyms": null,
+                    "narrow_synonyms": null,
+                    "broad_synonyms": null,
+                    "obsolete_terms": null,
+                    "obsolete_xrefs": null,
+                    "children": null,
+                    "ancestors": null,
+                    "descendants": null,
+                    "type": "phenotype",
+                    "ontology": {
+                        "description": "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities and clinical features encountered in human disease.",
+                        "title": "Human Phenotype Ontology",
+                        "license": "https://hpo.jax.org/app/license",
+                        "version": "2025-05-06"
+                    },
+                    "concept_ids": null,
+                    "concept_names": null,
+                    "umls_cui": null,
+                    "snomed_full_names": null,
+                    "cui_semantic_type": null,
+                    "snomed_concept_ids": null
+                }
+            },
+            {
+                "id": "HP_0000002",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "HPO",
+                            "MEDDRA"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "Abnormality of body height",
+                    "description": "Deviation from the norm of height with respect to that which is expected according to age and gender norms.",
+                    "code": null,
+                    "xrefs": null,
+                    "parents": null,
+                    "exact_synonyms": null,
+                    "related_synonyms": null,
+                    "narrow_synonyms": null,
+                    "broad_synonyms": null,
+                    "obsolete_terms": null,
+                    "obsolete_xrefs": null,
+                    "children": null,
+                    "ancestors": null,
+                    "descendants": null,
+                    "type": "phenotype",
+                    "ontology": {
+                        "description": "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities and clinical features encountered in human disease.",
+                        "title": "Human Phenotype Ontology",
+                        "license": "https://hpo.jax.org/app/license",
+                        "version": "2025-05-06"
+                    },
+                    "concept_ids": null,
+                    "concept_names": null,
+                    "umls_cui": null,
+                    "snomed_full_names": null,
+                    "cui_semantic_type": null,
+                    "snomed_concept_ids": null
+                }
+            },
+            {
+                "id": "HP_0000003",
+                "properties": {
+                    "sources": {
+                        "direct": [
+                            "OPEN_TARGETS",
+                            "HPO",
+                            "MEDDRA"
+                        ],
+                        "indirect": []
+                    },
+                    "name": "Multicystic kidney dysplasia",
+                    "description": "Multicystic dysplasia of the kidney is characterized by multiple cysts of varying size in the kidney and the absence of a normal pelvicaliceal system. The condition is associated with ureteral or ureteropelvic atresia, and the affected kidney is nonfunctional.",
+                    "code": null,
+                    "xrefs": null,
+                    "parents": null,
+                    "exact_synonyms": null,
+                    "related_synonyms": null,
+                    "narrow_synonyms": null,
+                    "broad_synonyms": null,
+                    "obsolete_terms": null,
+                    "obsolete_xrefs": null,
+                    "children": null,
+                    "ancestors": null,
+                    "descendants": null,
+                    "type": "phenotype",
+                    "ontology": {
+                        "description": "The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities and clinical features encountered in human disease.",
+                        "title": "Human Phenotype Ontology",
+                        "license": "https://hpo.jax.org/app/license",
+                        "version": "2025-05-06"
+                    },
+                    "concept_ids": null,
+                    "concept_names": null,
+                    "umls_cui": null,
+                    "snomed_full_names": null,
+                    "cui_semantic_type": null,
+                    "snomed_concept_ids": null
+                }
+            }
+        ]
+    }
+}

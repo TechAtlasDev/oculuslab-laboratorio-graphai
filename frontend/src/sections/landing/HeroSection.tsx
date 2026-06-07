@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Graph, Lightbulb, RocketLaunch } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
@@ -25,11 +26,13 @@ export function HeroSection() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-          <Button size="lg" className="rounded-full px-8 text-base h-12 shadow-lg hover:shadow-primary/25 transition-all">
-            Empezar Laboratorio
-            <ArrowRight weight="bold" className="ml-2 h-5 w-5" />
-          </Button>
-          <Button size="lg" variant="outline" className="rounded-full px-8 text-base h-12 bg-background/50 backdrop-blur-sm">
+          <Link to="/explorer">
+            <Button size="lg" className="rounded-full px-8 text-base h-12 shadow-lg hover:shadow-primary/25 transition-all w-full sm:w-auto">
+              Empezar Laboratorio
+              <ArrowRight weight="bold" className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+          <Button size="lg" variant="outline" className="rounded-full px-8 text-base h-12 bg-background/50 backdrop-blur-sm w-full sm:w-auto">
             <Graph weight="duotone" className="mr-2 h-5 w-5" />
             Ver Documentación
           </Button>
