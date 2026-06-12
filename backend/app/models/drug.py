@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional, Any, Union
+from typing import List, Optional, Any, Union, Literal
 
 class DrugSource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -27,7 +27,6 @@ class DrugProperties(BaseModel):
     sources: Optional[DrugSource] = None
     source_ids: Optional[List[str]] = None
     
-    # Campos químicos/físicos que pueden ser nulos
     cd_id: Optional[Union[str, int]] = None
     cd_formula: Optional[str] = None
     cd_mol_weight: Optional[float] = None
@@ -58,5 +57,6 @@ class DrugProperties(BaseModel):
 class DrugNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str # Debe ser "DRG"
+    label: Literal["DRG"]
+    display_name: str
     properties: DrugProperties

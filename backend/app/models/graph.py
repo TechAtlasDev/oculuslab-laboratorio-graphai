@@ -1,23 +1,45 @@
-from pydantic import BaseModel, Field
-from typing import List
+from pydantic import BaseModel, Field, ConfigDict
+from typing import List, Union, Annotated
+from app.models.gene import GeneNode
+from app.models.drug import DrugNode
+from app.models.disease import DiseaseNode
+from app.models.bpo import BpoNode
+from app.models.mfn import MfnNode
+from app.models.cco import CcoNode
+from app.models.phenotype import PhenotypeNode
+from app.models.anatomy import AnatomyNode
+from app.models.pathway import PathwayNode
+from app.models.exposure import ExposureNode
+from app.models.edge import Edge
+
+# Definición de Unión Discriminada para Nodos
+# Esto permite que la API responda con el esquema exacto según el 'label'
+StrictNode = Annotated[
+    Union[
+        GeneNode, 
+        DrugNode, 
+        DiseaseNode, 
+        BpoNode, 
+        MfnNode, 
+        CcoNode, 
+        PhenotypeNode, 
+        AnatomyNode, 
+        PathwayNode, 
+        ExposureNode
+    ],
+    Field(discriminator='label')
+]
 
 class NodeResponse(BaseModel):
+    model_config = ConfigDict(extra='forbid')
     id: str = Field(..., description="Unique identifier for the node")
     label: str = Field(..., description="Biological label or category of the node")
     display_name: str = Field(..., description="Human-readable name for visualization")
 
-class NodeDetailsResponse(NodeResponse):
-    properties: dict = Field(..., description="Full metadata properties of the node")
-
-class EdgeResponse(BaseModel):
-    source: str = Field(..., description="ID of the source node")
-    target: str = Field(..., description="ID of the target node")
-    relation: str = Field(..., description="Type of relationship")
-
 class NeighborhoodResponse(BaseModel):
     node_id: str = Field(..., description="The ID of the queried central node")
-    nodes: List[NodeResponse] = Field(..., description="List of unique nodes in the neighborhood")
-    edges: List[EdgeResponse] = Field(..., description="List of edges connecting the nodes")
+    nodes: List[StrictNode] = Field(..., description="List of unique nodes in the neighborhood with full metadata")
+    edges: List[Edge] = Field(..., description="List of edges connecting the nodes with full properties")
 
 class RelationCount(BaseModel):
     relation: str = Field(..., description="Type of relationship")
@@ -29,11 +51,11 @@ class NodeMetricsResponse(BaseModel):
     relations_count: List[RelationCount] = Field(..., description="Breakdown of connections by relation type")
 
 class SearchNodeResponse(BaseModel):
-    items: List[NodeResponse] = Field(..., description="List of nodes matching the search criteria")
+    items: List[StrictNode] = Field(..., description="List of nodes matching the search criteria")
     total: int = Field(..., description="Total number of matches")
 
 class DiscoveryNodeResponse(BaseModel):
-    items: List[NodeDetailsResponse] = Field(..., description="List of nodes with full details")
+    items: List[StrictNode] = Field(..., description="List of nodes with full biological details")
     total: int = Field(..., description="Total number of matches found")
 
 class LabelStat(BaseModel):

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Query, Path
-from app.models.analysis import DrugRepurposeResponse
+from app.models.analysis import DrugRepurposeResponse, DiseaseRepurposeResponse
 from app.services.optimus_service import OptimusService
 
 router = APIRouter(prefix="/api/v1/analysis", tags=["analysis"])
@@ -18,3 +18,15 @@ async def drug_repurposing_analysis(
     """
     data = service.drug_repurposing_analysis(drug_id=drug_id, limit=limit)
     return DrugRepurposeResponse(**data)
+
+@router.get("/repurpose/disease/{disease_id}", response_model=DiseaseRepurposeResponse)
+async def disease_repurposing_analysis(
+    disease_id: str = Path(..., description="ID of the disease to analyze (e.g. MONDO:0001)"),
+    limit: int = Query(10, ge=1, le=50),
+    service: OptimusService = Depends(get_optimus_service)
+):
+    """
+    Find potential drugs for a specific disease (Disease -> Gene -> Drug).
+    """
+    data = service.disease_repurposing_analysis(disease_id=disease_id, limit=limit)
+    return DiseaseRepurposeResponse(**data)

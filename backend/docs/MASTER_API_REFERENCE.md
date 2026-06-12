@@ -75,6 +75,31 @@ Obtiene métricas globales del grafo.
 }
 ```
 
+### `GET /api/v1/graph/discovery/nodes`
+Endpoint de descubrimiento para filtrar nodos por criterios biológicos y clínicos avanzados.
+- **Parámetros:**
+  - `label` (String, opcional): Filtrar por tipo (GEN, DRG, DIS).
+  - `biotype` (String, opcional): Filtrar genes por biotipo (ej. `protein_coding`). Solo aplica a `label=GEN`.
+  - `chromosome` (String, opcional): Filtrar genes por cromosoma (ej. `X`, `21`). Solo aplica a `label=GEN`.
+  - `is_approved` (Boolean, opcional): Filtrar drogas por estado de aprobación. Solo aplica a `label=DRG`.
+  - `max_phase` (Int, opcional): Filtrar drogas por fase clínica (0-4). Solo aplica a `label=DRG`.
+  - `therapeutic_area` (String, opcional): Filtrar enfermedades por área terapéutica. Solo aplica a `label=DIS`.
+  - `limit` (Int): Default 20.
+- **Respuesta (200):**
+```json
+{
+  "items": [
+    {
+      "id": "ENSG00000146648",
+      "label": "GEN",
+      "display_name": "EGFR",
+      "properties": { "biotype": "protein_coding", "...": "..." }
+    }
+  ],
+  "total": 1
+}
+```
+
 ### `GET /api/v1/graph/nodes/search`
 Búsqueda semántica y por ID.
 - **Parámetros:**

@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Literal
 
 class MfnSource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -26,5 +26,6 @@ class MfnProperties(BaseModel):
 class MfnNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str # Debe ser "MFN"
+    label: Literal["MFN"]
+    display_name: str
     properties: MfnProperties

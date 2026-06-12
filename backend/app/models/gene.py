@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional, Any, Union
+from typing import List, Optional, Any, Union, Literal
 
 class GeneSource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -117,5 +117,6 @@ class GeneProperties(BaseModel):
 class GeneNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str
+    label: Literal["GEN"]
+    display_name: str
     properties: GeneProperties

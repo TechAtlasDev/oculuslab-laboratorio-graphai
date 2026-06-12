@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Literal
 
 class AnatomySource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -26,5 +26,6 @@ class AnatomyProperties(BaseModel):
 class AnatomyNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str # Debe ser "ANA"
+    label: Literal["ANA"]
+    display_name: str
     properties: AnatomyProperties

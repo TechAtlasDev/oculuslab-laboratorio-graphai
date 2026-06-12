@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional
+from typing import List, Optional, Literal
 
 class ExpSource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -17,5 +17,6 @@ class ExpProperties(BaseModel):
 class ExposureNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str # Debe ser "EXP"
+    label: Literal["EXP"]
+    display_name: str
     properties: ExpProperties

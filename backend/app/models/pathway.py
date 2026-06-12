@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional
+from typing import List, Optional, Literal
 
 class PwySource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -16,5 +16,6 @@ class PwyProperties(BaseModel):
 class PathwayNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str # Debe ser "PWY"
+    label: Literal["PWY"]
+    display_name: str
     properties: PwyProperties

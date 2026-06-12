@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Literal
 
 class CcoSource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -26,5 +26,6 @@ class CcoProperties(BaseModel):
 class CcoNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str # Debe ser "CCO"
+    label: Literal["CCO"]
+    display_name: str
     properties: CcoProperties

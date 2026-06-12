@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, ConfigDict
-from typing import List, Optional, Any
+from typing import List, Optional, Any, Literal
 
 class BpoSource(BaseModel):
     model_config = ConfigDict(extra='forbid')
@@ -26,5 +26,6 @@ class BpoProperties(BaseModel):
 class BpoNode(BaseModel):
     model_config = ConfigDict(extra='forbid')
     id: str
-    label: str # Debe ser "BPO"
+    label: Literal["BPO"]
+    display_name: str
     properties: BpoProperties

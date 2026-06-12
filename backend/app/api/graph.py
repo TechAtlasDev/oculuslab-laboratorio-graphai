@@ -4,7 +4,8 @@ from app.models.graph import (
     NodeMetricsResponse, 
     SearchNodeResponse, 
     GraphStatsResponse,
-    NodeDetailsResponse
+    StrictNode,
+    DiscoveryNodeResponse
 )
 from app.services.optimus_service import OptimusService
 
@@ -12,6 +13,31 @@ router = APIRouter(prefix="/api/v1/graph", tags=["graph"])
 
 def get_optimus_service():
     return OptimusService()
+
+@router.get("/discovery/nodes", response_model=DiscoveryNodeResponse)
+async def discover_nodes(
+    label: str | None = Query(None, description="Filter by node label (e.g. GEN, DRG)"),
+    biotype: str | None = Query(None, description="Filter genes by biotype (e.g. protein_coding)"),
+    chromosome: str | None = Query(None, description="Filter genes by chromosome (e.g. X, 1, 2)"),
+    is_approved: bool | None = Query(None, description="Filter drugs by approval status"),
+    max_phase: int | None = Query(None, ge=0, le=4, description="Filter drugs by max clinical phase"),
+    therapeutic_area: str | None = Query(None, description="Filter diseases by therapeutic area"),
+    limit: int = Query(20, ge=1, le=100),
+    service: OptimusService = Depends(get_optimus_service)
+):
+    """
+    Discovery endpoint to filter and find nodes based on advanced biological criteria.
+    """
+    data = service.discover_nodes(
+        label=label, 
+        biotype=biotype, 
+        chromosome=chromosome, 
+        is_approved=is_approved, 
+        max_phase=max_phase,
+        therapeutic_area=therapeutic_area,
+        limit=limit
+    )
+    return DiscoveryNodeResponse(**data)
 
 @router.get("/nodes/search", response_model=SearchNodeResponse)
 async def search_nodes(
@@ -36,7 +62,7 @@ async def get_graph_stats(
     data = service.get_graph_stats()
     return GraphStatsResponse(**data)
 
-@router.get("/nodes/{node_id}", response_model=NodeDetailsResponse)
+@router.get("/nodes/{node_id}", response_model=StrictNode)
 async def get_node_details(
     node_id: str = Path(..., description="ID of the node to retrieve"),
     service: OptimusService = Depends(get_optimus_service)
@@ -46,7 +72,7 @@ async def get_node_details(
     """
     try:
         data = service.get_node_details(node_id=node_id)
-        return NodeDetailsResponse(**data)
+        return data
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
 
