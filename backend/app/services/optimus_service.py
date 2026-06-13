@@ -288,3 +288,75 @@ class OptimusService:
             "nodes_by_label": lf_nodes.group_by("label").agg(pl.len().alias("count")).collect().sort("count", descending=True).to_dicts(),
             "edges_by_relation": lf_edges.group_by("relation").agg(pl.len().alias("count")).collect().sort("count", descending=True).to_dicts()
         }
+
+    def get_random_node(self) -> dict:
+        path_nodes = self.get_file_path("nodes.parquet")
+        df_node = pl.read_parquet(path_nodes).sample(n=1)
+        row = df_node.to_dicts()[0]
+        return {
+            "id": row["id"],
+            "label": row["label"],
+            "display_name": row["id"].split("_")[-1],
+            "properties": json.loads(row["properties"]) if row.get("properties") else {}
+        }
+
+    def get_random_nodes(self, n: int) -> list[dict]:
+        path_nodes = self.get_file_path("nodes.parquet")
+        df_nodes = pl.read_parquet(path_nodes).sample(n=n)
+        return df_nodes.to_dicts()
+
+    def get_random_edges(self, n: int) -> list[dict]:
+        path_edges = self.get_file_path("edges.parquet")
+        df_edges = pl.read_parquet(path_edges).sample(n=n)
+        return df_edges.to_dicts()
+
+    def get_node_by_label(self, label: str, random:bool = False) -> dict:
+        path_nodes = self.get_file_path("nodes.parquet")
+        if random:
+            df_node = pl.read_parquet(path_nodes).filter(pl.col("label") == label).sample(n=1)
+        else:
+            df_node = pl.read_parquet(path_nodes).filter(pl.col("label") == label)
+        row = df_node.to_dicts()[0]
+        return {
+            "id": row["id"],
+            "label": row["label"],
+            "display_name": row["id"].split("_")[-1],
+            "properties": json.loads(row["properties"]) if row.get("properties") else {}
+        }
+    
+    def get_random_edge(self) -> dict:
+        path_edges = self.get_file_path("edges.parquet")
+        df_edge = pl.read_parquet(path_edges).sample(n=1)
+        row = df_edge.to_dicts()[0]
+        return {
+            "from": row["from"],
+            "to": row["to"],
+            "relation": row["relation"],
+            "label": row["label"],
+            "undirected": row.get("undirected", False),
+            "properties": json.loads(row["properties"]) if row.get("properties") else {}
+        }
+
+    def get_edge_between_nodes(self, node_a: str, node_b: str) -> list[dict]:
+        path_edges = self.get_file_path("edges.parquet")
+        lf_edges = pl.scan_parquet(path_edges)
+        
+        lf_filtered = lf_edges.filter(
+            ((pl.col("from") == node_a) & (pl.col("to") == node_b)) |
+            ((pl.col("from") == node_b) & (pl.col("to") == node_a))
+        )
+        
+        df_edges = lf_filtered.collect()
+        
+        formatted_edges = []
+        for row in df_edges.to_dicts():
+            formatted_edges.append({
+                "from": row["from"],
+                "to": row["to"],
+                "relation": row["relation"],
+                "label": row["label"],
+                "undirected": row.get("undirected", False),
+                "properties": json.loads(row["properties"]) if row.get("properties") else {}
+            })
+            
+        return formatted_edges
